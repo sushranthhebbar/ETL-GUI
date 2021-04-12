@@ -3,10 +3,10 @@
       <div><a href="https://github.com/sushranthhebbar/ETL-GUI" class="navbar-brand">ETL</a></div>
   
       <ul class="navbar-nav">
-        <li><a  routerLink="/" class="nav-link">View Sources</a></li>
-        <li><a  routerLink="/addSource" class="nav-link">Add New Source</a></li>
-        <!--<li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
-        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></li>-->
+        <li><a  *ngIf="loginService.isUserLoggedIn()" routerLink="/" class="nav-link">View Sources</a></li>
+        <li><a  *ngIf="loginService.isUserLoggedIn()" routerLink="/addSource" class="nav-link">Add New Source</a></li>
+        <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></li>
   
       </ul>
   

@@ -28,6 +28,6 @@ export class HomeComponent implements OnInit {
 
   handleSuccessfulResponse(response){
     this.etl = response;
-    console.log(response);
+    //console.log(response);
   }
 }
