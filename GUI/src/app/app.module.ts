@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
+import { TransformComponent } from './transform/transform.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LogoutComponent } from './logout/logout.component';
     AddSourceComponent,
     HeaderComponent,
     LoginComponent,
-    LogoutComponent
+    LogoutComponent,
+    TransformComponent
   ],
   imports: [
     BrowserModule,
