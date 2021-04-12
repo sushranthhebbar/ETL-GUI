@@ -7,12 +7,18 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AddSourceComponent } from './add-source/add-source.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AddSourceComponent
+    AddSourceComponent,
+    HeaderComponent,
+    LoginComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
