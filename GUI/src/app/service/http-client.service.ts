@@ -9,6 +9,12 @@ export class ETL{
   ){}
 }
 
+export class Transform{
+  constructor(
+    public transform:string
+  ){}
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -27,6 +33,14 @@ export class HttpClientService {
 
   public addSource(e:ETL){
     return this.httpclient.post<ETL>("http://localhost:8080/ETL",e);
+  }
+
+  public addTransform(transform: Transform){
+    return this.httpclient.post<Transform>("http://localhost:8080/ETL/transform",transform);
+  }
+
+  public getTransform(){
+    return this.httpclient.get<Transform[]>("http://localhost:8080/ETL/transform"); 
   }
 
 }
