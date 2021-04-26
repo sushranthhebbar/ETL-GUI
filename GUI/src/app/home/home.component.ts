@@ -26,6 +26,18 @@ export class HomeComponent implements OnInit {
       })
   };
 
+  runSource(): void{
+    this.httpClientService.runSource().subscribe(
+      data => {console.log(data);}
+    )
+  }
+
+  stopSource(e:ETL):void {
+    this.httpClientService.stopSource(e).subscribe(
+      data =>{}
+    )
+  }
+
   handleSuccessfulResponse(response){
     this.etl = response;
     //console.log(response);

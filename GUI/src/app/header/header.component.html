@@ -5,8 +5,9 @@
       <ul class="navbar-nav">
         <li><a  *ngIf="loginService.isUserLoggedIn()" routerLink="/" class="nav-link">View Sources</a></li>
         <li><a  *ngIf="loginService.isUserLoggedIn()" routerLink="/addSource" class="nav-link">Add New Source</a></li>
+        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/target" class="nav-link">Target</a></li>
         <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
-        <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/transform" class="nav-link">Transform</a></li>
+       <!-- <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/transform" class="nav-link">Transform</a></li>-->
         <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a></li>
       </ul>
   

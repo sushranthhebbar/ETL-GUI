@@ -1,0 +1,24 @@
+<div class="col-md-6">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Foreign_Exchange_Id</th>
+                <th>Currency_Format</th>
+                <th>Base_Format</th>
+                <th>Currency_Value_Multiplier</th>
+                <th>Country</th>
+                <th>Date_Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of target">
+                <td>{{t.foreign_Exchange_Id}}</td>
+                <td>{{t.currency_Format}}</td>
+                <td>{{t.base_Format}}</td>
+                <td>{{t.currency_Value_Multiplier}}</td>
+                <td>{{t.country}}</td>
+                <td>{{t.date_Time}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

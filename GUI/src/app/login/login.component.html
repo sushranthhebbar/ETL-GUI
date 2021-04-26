@@ -1,4 +1,4 @@
-<div class="container">
+<!--<div class="container">
     <div>
       User Name : <input type="text" name="username" [(ngModel)]="username">
       Password : <input type="password" name="password" [(ngModel)]="password">
@@ -6,4 +6,80 @@
     <button (click)=checkLogin() class="btn btn-success">
       Login
     </button>
-  </div>
+  </div>-->
+<!--
+  <div class="login">
+    <div class="heading">
+      <h2>Sign in</h2>
+      <form action="#">
+  
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><i class="fa fa-user"></i></span>
+          <input [(ngModel)]="username" type="text" name ="username" class="form-control" placeholder="Username or email" >
+            </div>
+  
+          <div class="input-group input-group-lg">
+            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+            <input [(ngModel)]="password" type="password" name="password" class="form-control" placeholder="Password" >
+          </div>
+  
+          <button (click)=checkLogin() type="submit" class="float">Login</button>
+         </form>
+       </div>
+   </div>-->
+
+<!--
+<div class="back">
+
+
+  <div class="div-center">
+
+
+    <div class="content">
+
+
+      <h3>Login</h3>
+      <hr />
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <hr />
+        <button type="button" class="btn btn-link">Signup</button>
+        <button type="button" class="btn btn-link">Reset Password</button>
+
+      </form>
+
+    </div>
+
+
+    
+  </div>-->
+  <div class="card">
+    <h4 class="card-header">Login</h4>
+    <div class="card-body">
+        <form >
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input [(ngModel)]="username" name = "username"type="text"  class="form-control"  />
+                
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input [(ngModel)]="password" name = "password" type="password"  class="form-control"  />
+            </div>
+            <div class="form-group">
+                <button  (click)=checkLogin() class="btn btn-success">
+                    <span  class="spinner-border spinner-border-sm mr-1"></span>
+                    Login
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
